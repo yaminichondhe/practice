@@ -1,0 +1,281 @@
+@media (min-width:1201px){
+.content{
+    height: 70%;
+    width: 50%;
+    margin-top: 3%;
+    animation-name: slideInRight ;
+    animation-duration: 2s;
+    margin-right: 3%;
+}
+.image{
+    height: 100%;
+    width: 50%;
+    left: 0%;
+    margin-top: 1%;
+    background-image: url("./images/show1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.center{
+    height: 35vw;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color: #FFAEC9;
+    z-index: -2;
+}
+.content p{
+    line-height: 150%;
+    font-size: larger;
+    
+}
+
+
+
+
+
+.center2{
+    height: 35vw;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 5%;
+    background-color: #c4affc;
+   
+    
+}
+.image2{
+    height: 80%;
+    width: 40%;
+    background-image: url("./images/pngwing.com.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+
+}
+.content2{
+    padding-top: 2%;
+    height: 70%;
+    width: 50%;
+    animation: slideInLeft 2s timing-function delay iteration-count direction fill-mode;
+}
+.content2 p{
+    line-height: 150%;
+    font-size: larger;
+
+}
+.center3{
+    height: 35vw;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0%;
+    margin: 0%;
+}
+
+.content3{
+    height: 100%;
+    width: 40%;
+    padding-right: 3%;
+    padding-top: 2%;
+}
+.image3{
+    height: 100%;
+    width: 47%;
+    background-image: url("./images/benefits.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content3 ul li{
+    line-height: 150%;
+    font-size: larger;
+}
+.center4{
+    height: 35vw;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #cbeaf8;
+
+}
+.content4{
+    height: 70%;
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 0%;
+    padding-bottom: ;
+    
+
+}
+.image4{
+    background-image: url("./images/image.png");
+    background-size: contain;
+    height: 100%;
+    width: 40%;
+    
+    background-repeat: no-repeat;
+
+}
+.content4 p{
+    line-height: 150%;
+    font-size: larger;
+}
+}
+@media ((min-width:481px) and (max-width: 1200px)) {
+    .content{
+        height: 70%;
+        width: 50%;
+        margin-top: 3%;
+        animation-name: slideInRight ;
+        animation-duration: 2s;
+        margin-right: 3%;
+    }
+    .image{
+        height: 100%;
+        width: 50%;
+        left: 0%;
+        margin-top: 1%;
+        background-image: url("./images/show1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .center{
+        height: 35vw;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+        background-color: #FFAEC9;
+        z-index: -2;
+    }
+    .content p{
+        line-height: 150%;
+        font-size: larger;
+        
+    }
+    
+    
+    
+    button{
+        background:rgb(252, 58, 132);
+      
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        
+        margin-top: 0px;
+    }
+    button:hover{
+        background-color: red;
+    }
+    button a:hover{
+        color: white;
+    }
+    button a{
+        text-decoration:none;
+        color: black;
+    
+    }
+    
+    .center2{
+        height: 35vw;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content:space-between;
+        padding-left: 5%;
+        background-color: #c4affc;
+       
+        
+    }
+    .image2{
+        height: 80%;
+        width: 40%;
+        background-image: url("./images/pngwing.com.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 0%;
+    
+    }
+    .content2{
+        padding-top: 2%;
+        height: 70%;
+        width: 50%;
+        animation: slideInLeft 2s timing-function delay iteration-count direction fill-mode;
+    }
+    .content2 p{
+        line-height: 150%;
+        font-size: larger;
+    
+    }
+    .center3{
+        height: 35vw;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content:space-between;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .content3{
+        height: 70%;
+        width: 50%;
+        
+    }
+    .image3{
+        height: 100%;
+        width: 50%;
+        background-image: url("./images/benefits.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content3 ul li{
+        line-height: 150%;
+        font-size: larger;
+    }
+    .center4{
+        height: 35vw;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content:space-between;
+        background-color: #cbeaf8;
+    
+    }
+    .content4{
+        height: 70%;
+        width: 50%;
+        padding-left: 5%;
+        padding-top: 0%;
+        padding-bottom: ;
+        
+    
+    }
+    .image4{
+        background-image: url("./images/image.png");
+        background-size: contain;
+        height: 100%;
+        width: 40%;
+        
+        background-repeat: no-repeat;
+    
+    }
+    .content4 p{
+        line-height: 150%;
+        font-size: larger;
+    }
+}

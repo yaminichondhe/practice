@@ -1,0 +1,147 @@
+/* Forum Section */
+@media (min-width:1201px){
+.forum-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Question and Answer Sections */
+  .question-section, .answer-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  /* Headers */
+  .question-section h2, .answer-section h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+  }
+  
+  /* Content Styling */
+  .question-content, .answer-content {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    padding: 8px 0;
+  }
+  
+  /* Action Buttons */
+  .question-actions, .answer-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  .question-actions button, .answer-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .question-actions button:hover, .answer-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .forum-sec {
+      padding: 16px;
+    }
+    .question-section, .answer-section {
+      padding: 12px;
+    }
+    .question-actions button, .answer-actions button {
+      padding: 4px 10px;
+      font-size: 0.8em;
+    }
+  }
+}
+@media ((min-width:481px) and (max-width: 1200px)) {
+    .forum-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+      
+      /* Question and Answer Sections */
+      .question-section, .answer-section {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+      }
+      
+      /* Headers */
+      .question-section h2, .answer-section h2 {
+        margin: 0 0 10px 0;
+        font-size: 1.2em;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+      }
+      
+      /* Content Styling */
+      .question-content, .answer-content {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #555;
+        padding: 8px 0;
+      }
+      
+      /* Action Buttons */
+      .question-actions, .answer-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 8px;
+      }
+      
+      .question-actions button, .answer-actions button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+        font-size: 0.9em;
+      }
+      
+      .question-actions button:hover, .answer-actions button:hover {
+        background-color: #0056b3;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        .forum-sec {
+          padding: 16px;
+        }
+        .question-section, .answer-section {
+          padding: 12px;
+        }
+        .question-actions button, .answer-actions button {
+          padding: 4px 10px;
+          font-size: 0.8em;
+        }
+      }
+}

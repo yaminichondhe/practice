@@ -1,0 +1,283 @@
+@media ((min-width:481px) and (max-width: 1200px)) {
+.welcome {
+    height: 80vh; 
+    width: 100%;
+    background-color: #F1FFBB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .start-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left-shift{
+    position: fixed;
+    left: 0%;
+    
+  }
+  .right-shift{
+    position: fixed;
+    right: 0%;
+  }
+  .c0 {
+    background-image: url('');
+    background-size: cover; /* Adjusts the background image to cover the div */
+    background-position: center; /* Centers the background image */
+    /* Other styles */
+  }
+  
+  .c1 {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    /* Other styles */
+  }
+  
+  .c2 {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    /* Other styles */
+  }
+  
+  /* Add more classes as needed */
+  
+  .title {
+    display: flex;
+    justify-content: space-between;
+    height: auto; /* Let the height adjust based on content */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .forums {
+    flex: 1; /* Take up half the width */
+    max-width: 50%; /* Restrict it to half the width */
+    
+    background-color: #BBDAFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .tools {
+    flex: 1; /* Take up half the width */
+    max-width: 50%; /* Restrict it to half the width */
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; /* Gap between tool cards */
+    padding: 20px;
+  }
+  
+  .stats {
+    width: 100%; /* Full width inside the grid */
+    padding-bottom: 50%; /* Ensures square shape */
+    height: 100%;
+      
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Adjust as needed */
+     
+    background-size: contain;   /* Ensures the image covers the div */
+    background-repeat: no-repeat;
+    background-position: center;  /* Center the image */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    
+  }
+
+
+
+/* Specific styles for different toolcards based on id */
+.f1 {
+  background-color: #ffe5e5; /* Red-ish background for Toolcard with id "f1" */
+  background-image: url("./images/appointment-booking-calendar-design.png");
+}
+
+.f2 {
+  background-color: #e5ffed; /* Green-ish background for Toolcard with id "f2" */
+  background-image: url("./images/6195525_3156619.svg");
+}
+
+.f3 {
+  background-color: #e5f0ff; /* Blue-ish background for Toolcard with id "f3" */
+  background-image: url("./images/man-holding-clock-time-management-concept.png");
+}
+
+.f4 {
+  background-color: #fffbe5; /* Yellow-ish background for Toolcard with id "f4" */
+  background-image: url("./images/aaa.png");
+}
+
+  
+  .stats img {
+    max-width: 90%; /* Make images responsive */
+    max-height: 90%;
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack elements vertically on smaller screens */
+    .title {
+      flex-direction: column;
+    }
+    
+    .forums, .tools {
+      max-width: 100%; /* Full width for both on small screens */
+    }
+  
+    .tools {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+}
+@media (min-width:1201px){
+    .welcome {
+        height: 80vh; 
+        width: 100%;
+        background-color: #F1FFBB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .start-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .left-shift{
+        position: fixed;
+        left: 0%;
+        
+      }
+      .right-shift{
+        position: fixed;
+        right: 0%;
+      }
+      .c0 {
+        background-image: url("./images/appointment-booking-calendar-design.png");
+        background-size: cover; /* Adjusts the background image to cover the div */
+        background-position: center; /* Centers the background image */
+        height: 200%;
+        width: 200%;
+      }
+      
+      .c1 {
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        /* Other styles */
+      }
+      
+      .c2 {
+        background-image: url('');
+        background-size: cover;
+        background-position: center;
+        /* Other styles */
+      }
+      
+      /* Add more classes as needed */
+      
+      .title {
+        display: flex;
+        justify-content: space-between;
+        height: auto; /* Let the height adjust based on content */
+        width: 100%;
+        padding: 20px;
+      }
+      
+      .forums {
+        flex: 1; /* Take up half the width */
+        max-width: 50%; /* Restrict it to half the width */
+        
+        background-color: #BBDAFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+      
+      .tools {
+        flex: 1; /* Take up half the width */
+        max-width: 50%; /* Restrict it to half the width */
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-gap: 20px; /* Gap between tool cards */
+        padding: 20px;
+      }
+      
+      .stats {
+        width: 100%; /* Full width inside the grid */
+        padding-bottom: 50%; /* Ensures square shape */
+        height: 100%;
+          
+        position: relative;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;  /* Adjust as needed */
+         
+        background-size: contain;   /* Ensures the image covers the div */
+        background-repeat: no-repeat;
+        background-position: center;  /* Center the image */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 10px;
+        
+      }
+    
+    
+    
+    /* Specific styles for different toolcards based on id */
+    .f1 {
+      background-color: #ffe5e5; /* Red-ish background for Toolcard with id "f1" */
+      background-image: url("./images/appointment-booking-calendar-design.png");
+    }
+    
+    .f2 {
+      background-color: #e5ffed; /* Green-ish background for Toolcard with id "f2" */
+      background-image: url("./images/6195525_3156619.svg");
+    }
+    
+    .f3 {
+      background-color: #e5f0ff; /* Blue-ish background for Toolcard with id "f3" */
+      background-image: url("./images/man-holding-clock-time-management-concept.png");
+    }
+    
+    .f4 {
+      background-color: #fffbe5; /* Yellow-ish background for Toolcard with id "f4" */
+      background-image: url("./images/aaa.png");
+    }
+    
+      
+      .stats img {
+        max-width: 90%; /* Make images responsive */
+        max-height: 90%;
+      }
+      
+      @media (max-width: 768px) {
+        /* Stack elements vertically on smaller screens */
+        .title {
+          flex-direction: column;
+        }
+        
+        .forums, .tools {
+          max-width: 100%; /* Full width for both on small screens */
+        }
+      
+        .tools {
+          grid-template-columns: 1fr; /* Single column on smaller screens */
+        }
+      }
+}
