@@ -4,7 +4,7 @@ const welcomeContents = [
       h3: "Keep track of your classes and attendance with ease.",
       p: "Welcome to our college attendance platform! Register your college and log in to generate or enter unique attendance codes for a seamless experience.",
       id: "c1",
-      color: "#FFAEC9" 
+      color: "#F1FFBB" 
   },
   {
       text: "Visual representation of weekly, monthly attendance!",

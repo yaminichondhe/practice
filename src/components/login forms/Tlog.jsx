@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./Tlog.css";
-import Navi from "../Navbar/Navi";
-import Foot from "../Footer/Foot";
 
-
-const Tlog = () => {
+const Tlog = ({ onClose }) => {
   const [isRegister, setIsRegister] = useState(true);
 
   const toggleForm = () => {
@@ -12,10 +9,12 @@ const Tlog = () => {
   };
 
   return (
-    <>
-    <Navi />
-    <div className="T_container">
+    <div className="T_popup">
       <div className="T_form-container">
+        {/* Close Button */}
+        <div className="T_close-button" onClick={onClose}>
+          ×
+        </div>
         <h2>{isRegister ? "Register" : "Login"}</h2>
         {isRegister ? (
           <form>
@@ -39,8 +38,6 @@ const Tlog = () => {
         </p>
       </div>
     </div>
-    <Foot />
-    </>
   );
 };
 

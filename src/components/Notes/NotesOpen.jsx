@@ -4,41 +4,40 @@ import Classcard from "./Classcard";
 import "./Notes.css";
 import Navi from "../Navbar/Navi";
 import Foot from "../Footer/Foot";
+import Navi2 from "../Navbar/Navi2";
+import V_navi from "../Navbar/V_navi";
+import CreateClass from "./CreateClass";
 
 
 function NotesOpen(){
-  
-   
-    function createCard(contact) {
-        return (
-          <Classcard
-            key={contact.id}
-            name={contact.name}
-            img={contact.imgURL}
-            tel={contact.phone}
-            
-          />
-        );
-      }
+      
     return(
       <>
-      <Navi />
+      
+      <V_navi />
+      <div className="main-content">
+        <header className="header">
+          <h1>My Notes</h1>
+          <div className="filters">
+            <span>Filter by:</span>
+            <select>
+              <option>Time</option>
+              <option>Level</option>
+              <option>Language</option>
+              <option>Type</option>
+            </select>
+          </div>
+        </header>
         <div className="notes-start">
-        <div className="notes-title">
-          <p>Notes Section</p>
+          <CreateClass />
         </div>
-        <div className="class-name">
-          TE E&TC
         </div>
-        <div className="sub-box" >
-          
-          
-          {contacts.map(createCard) }
-          
-        </div>
+        
 
-      </div> 
-      <Foot />
+      
+        
+      
+      
       </>
     );
 }

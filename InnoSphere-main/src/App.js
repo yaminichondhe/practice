@@ -27,6 +27,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 
 function App() {
+  function toggleSubjectCode(role) {
+    const subjectCodeInput = document.getElementById('subjectCodeInput');
+    if (role === 'teacher') {
+      subjectCodeInput.style.display = 'block';
+    } else {
+      subjectCodeInput.style.display = 'none';
+    }
+  }
+
   const [questions, setQuestions] = useState([]); // State to store questions and answers
   const [newQuestion, setNewQuestion] = useState(''); // State for the new question input
   const [newAnswer, setNewAnswer] = useState(''); // State for the new answer input
@@ -62,7 +71,8 @@ function App() {
   const [k, l] = useState(false);
   const [m, n] = useState(false);
   const [o, p] = useState(false);
-
+  const [q, r] = useState(false);
+  const [s, t] = useState(false);
   const toggleTools = () => {
     setIsToolsVisible(!isToolsVisible);
     
@@ -83,6 +93,47 @@ function App() {
       document.body.classList.remove('freeze-background');
     }
   };
+  const teahide = () => {
+    r(!q);
+    
+    if (q) {
+      document.body.classList.add('teasignup');
+      
+    } 
+
+  };
+
+  const clghide2= () => {
+     
+    r(!q);
+    
+    if (q) {
+      document.body.classList.remove('signup');
+    } 
+    
+  };
+
+
+  const stuhide = () => {
+    t(!s);
+    
+    if (s) {
+      document.body.classList.add('stusignup');
+      
+    } 
+
+  };
+
+  const clghide3= () => {
+     
+    t(!s);
+    
+    if (s) {
+      document.body.classList.remove('stusignup');
+    } 
+    
+  };
+
   const clghide = () => {
     b(!a);
     
@@ -397,36 +448,65 @@ function App() {
     <div className={a ? 'signupp' : 'signup'}>
     <div className='clg'>
     <div className='hide2'><img  onClick={clghide1} src={img8} width={20}></img></div> 
-      <form>
-        <input name='college' type='text' placeholder='Enter College: '/>
-        <input name='collegeCode' type='number' placeholder='Enter College Code: '/>
-        <input name='dept' type='text' placeholder='Enter Department: '/>
-        <input name='deptCode' type='number' placeholder='Enter Department Code: '/>
-        <input name='submit' type='submit' id='aaa'/>
-        
-      </form>
+    <form action="/registerCollegeCourse" method="POST">
+ 
+    <input type="text" name="college_name" placeholder="Enter College Name" required />
+    <input type="text" name="college_code" placeholder="Enter College Code" required />
+    <input type="text" name="course_name" placeholder="Enter Course Name" required />
+    <input type="text" name="branch_name" placeholder="Enter Department/Branch" required />
+    <input type="number" name="year" placeholder="Enter Year" required />
+    <input type="text" name="division" placeholder="Enter Division" required />
+    <input id='aaa' type="submit" name='submit' placeholder='Submit'/>
+   </form>
+
+
       
     </div>
-    
+    </div>
+
     <div className={c ? 'logsignn' : 'logsign'}>
     <div className='ls'>
-    <div className='hide3'><img  onClick={logsign1} src={img8} width={20}></img></div> 
-      <form>
-        <input name='name' type='text' placeholder='Name: '/>
-        <input name='email' type='email' placeholder='Email: '/>
-        <input name='password' type='password' placeholder='Password: '/>
-        <input name='submit' type='submit' id='bt'/>
-        
-      </form>
-      <div className='btls'>
-      <button type="button" className="btn btn-secondary bg-black">logIn</button>
-      </div>
-      
+        <div className='hide3'>
+            <img onClick={logsign1} src={img8} width={20} alt="Toggle"></img>
+        </div>
+        <p>Register Here</p>
+        <form action="/registerUser" method="POST">
+
+  <input name="name" type="text" placeholder="Name" required />
+
+
+  <input name="email" type="email" placeholder="Email" required />
+
+ 
+  <input name="password" type="password" placeholder="Password" required />
+
+
+  <select id="role" name="role" required onchange="toggleSubjectCode(this.value)">
+    <option value="" disabled selected>Role</option>
+    <option value="student">Student</option>
+    <option value="teacher">Teacher</option>
+    <option value="admin">Admin</option>
+  </select>
+
+
+  <input name="college_code" type="text" placeholder="College Code" required />
+
+ 
+  <input id='ph' name="contact_number" type="tel" placeholder="Contact Number" pattern="[0-9]{10}" required />
+
+  <input id="subjectCodeInput" name="subject_code" type="text" placeholder="Subject Code" style="display: none;" />
+
+  <input id='subreg' type="submit" value="Register" />
+</form>
+
+
+
     </div>
-    </div>
+</div>
+
    
    
-    </div>
+    
     <div className={e ? 'achievementt' : 'achievement'}>
     <div className='post'>
       <div className='prof'></div>
@@ -468,7 +548,7 @@ function App() {
           <img src={img14} width='100%'></img>
         </div>
         <div className='ttool'>
-        <div className='giveatt'>
+        <div className='giveatt' onClick={stuhide}>
         <FontAwesomeIcon icon={faCirclePlus} width='25%'/>
         </div>
         <div className='overatt'>
@@ -486,7 +566,7 @@ function App() {
           <img src={img15} width='100%'></img>
         </div>
         <div className='ttool'>
-        <div className='giveatt'>
+        <div className='giveatt' onClick={teahide}>
         <FontAwesomeIcon icon={faCirclePlus} width='25%'/>
         </div>
         <div className='overatt'>
@@ -498,13 +578,49 @@ function App() {
         <h5>See comments from your Teachers</h5>
       </div>
       </div>
+
+
+      
+     <div className={q ? 'teasignupp' : 'teasignup'}>
+    <div className='clg'>
+    <div className='hide2'><img  onClick={clghide2} src={img8} width={20}></img></div> 
+    <form action="/registerCollegeCourse" method="POST">
+ 
+    <input type="text" name="college_name" placeholder="Enter College Name" required />
+    <input type="text" name="college_code" placeholder="Enter College Code" required />
+    <input type="text" name="course_name" placeholder="Enter Course Name" required />
+    <input type="text" name="branch_name" placeholder="Enter Department/Branch" required />
+    <input type="number" name="year" placeholder="Enter Year" required />
+    <input type="text" name="division" placeholder="Enter Division" required />
+    <input id='aaa' type="submit" name='submit' placeholder='Submit'/>
+   </form>
+
+
+      
+    </div>
+    </div>
+
+    <div className={s ? 'stusignupp' : 'stusignup'}>
+    <div className='clg'>
+    <div className='hide2'><img  onClick={clghide3} src={img8} width={20}></img></div> 
+    <form action="/registerCollegeCourse" method="POST">
+ 
+    <input type="text" name="college_name" placeholder="Enter College Name" required />
+    <input type="text" name="college_code" placeholder="Enter College Code" required />
+    <input type="text" name="course_name" placeholder="Enter Course Name" required />
+    <input type="text" name="branch_name" placeholder="Enter Department/Branch" required />
+    <input type="number" name="year" placeholder="Enter Year" required />
+    <input type="text" name="division" placeholder="Enter Division" required />
+    <input id='aaa' type="submit" name='submit' placeholder='Submit'/>
+   </form>
+
+
+      
+    </div>
+    </div>
     </div>
     </div>
   );
 }
 
 export default App;
-
-
-
-

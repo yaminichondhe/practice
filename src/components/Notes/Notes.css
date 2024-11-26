@@ -1,5 +1,5 @@
 @media ((min-width:481px) and (max-width: 1200px)) {
-.notes-sharing {
+  .notes-sharing {
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
@@ -112,78 +112,112 @@
     color: white;
     font-size: 1.2rem;
   }
-  .card {
-    height: auto;
-    width: 100%;
-    
-    
-  }
-  
-  .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #e0efff;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .name {
-    margin-top: 8%;
-  }
-  
-  .card img {
-    height: 8vw; 
-    width: 25%;
-    margin-top: 6%;
-  }
-  
-  .circle-img {
-    border-radius: 50%;
-    border: 3px solid #fff;
-    object-fit: cover; 
-  }
-  
-  
-  .bottom {
-    background-color: #ffffff;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .info {
-    margin-left: 5%;
-  }
-  
-  
-  .notes-start {
-    padding: 20px;
-    background-color: #ffffff;
-    min-height: 100vh;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  .notes-title {
-    font-size: 150%;
-    font-weight:bold;
-    color: #2d3436;
-    margin-bottom: 10px;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  }
-  .notes-title p{
-    margin-left: 3%;
-  }
-  
-  .class-name {
-    font-size: 1.5rem;
-    color: #636e72;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .sub-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 20px;
-  }
+  /* Main Content Area (Excluding Navigation) */
+.main-content {
+margin-left: 18vw; /* Adjust for the width of the navigation bar */
+
+padding: 3vh;
+background-color: #f8f9fa;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* Header Section */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 4vh;
+}
+
+.header h1 {
+font-size: 2vw;
+color: #2d3436;
+}
+
+.filters {
+display: flex;
+align-items: center;
+}
+
+.filters span {
+margin-right: 1vw;
+font-size: 1vw;
+color: #636e72;
+}
+
+.filters select {
+font-size: 1vw;
+padding: 0.5vh 1vw;
+border: 1px solid #dfe6e9;
+border-radius: 5px;
+}
+
+/* Notes Section */
+.notes-start {
+padding: 3vh 3vw;
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+gap: 2vh;
+}
+
+/* Card Grid Layout */
+.sub-box {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr)); /* Responsive grid */
+gap: 2vw;
+width: 100%;
+}
+
+/* Individual Cards */
+.card {
+background-color: #ffffff;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+
+.card .top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2vh 2vw;
+background-color: #e0efff;
+}
+
+.card .name {
+font-size: 1.5vw;
+color: #2d3436;
+}
+
+.card img {
+width: 6vw;
+height: 6vw;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.card .bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2vh 2vw;
+background-color: #ffffff;
+}
+
+.card .bottom .open-sign {
+font-size: 1.2vw;
+font-weight: bold;
+color: #6c5ce7;
+cursor: pointer;
+}
 }
 @media (min-width:1201px){
     .notes-sharing {
@@ -299,76 +333,110 @@
         color: white;
         font-size: 1.2rem;
       }
-      .card {
-        height: auto;
-        width: 100%;
-        
-        
-      }
-      
-      .top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #e0efff;
-        border-radius: 10px 10px 0 0;
-      }
-      
-      .name {
-        margin-top: 8%;
-      }
-      
-      .card img {
-        height: 8vw; 
-        width: 25%;
-        margin-top: 6%;
-      }
-      
-      .circle-img {
-        border-radius: 50%;
-        border: 3px solid #fff;
-        object-fit: cover; 
-      }
-      
-      
-      .bottom {
-        background-color: #ffffff;
-        border-radius: 0 0 10px 10px;
-      }
-      
-      .info {
-        margin-left: 5%;
-      }
-      
-      
-      .notes-start {
-        padding: 20px;
-        background-color: #ffffff;
-        min-height: 100vh;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      }
-      
-      .notes-title {
-        font-size: 150%;
-        font-weight:bold;
-        color: #2d3436;
-        margin-bottom: 10px;
-        text-align: left;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      }
-      .notes-title p{
-        margin-left: 3%;
-      }
-      
-      .class-name {
-        font-size: 1.5rem;
-        color: #636e72;
-        margin-bottom: 20px;
-        text-align: left;
-      }
-      .sub-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-gap: 20px;
-      }
+      /* Main Content Area (Excluding Navigation) */
+.main-content {
+  margin-left: 18vw; /* Adjust for the width of the navigation bar */
+  
+  padding: 3vh;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.header h1 {
+  font-size: 2vw;
+  color: #2d3436;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters span {
+  margin-right: 1vw;
+  font-size: 1vw;
+  color: #636e72;
+}
+
+.filters select {
+  font-size: 1vw;
+  padding: 0.5vh 1vw;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+}
+
+/* Notes Section */
+.notes-start {
+  padding: 3vh 3vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/* Card Grid Layout */
+.sub-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr)); /* Responsive grid */
+  gap: 2vw;
+  width: 100%;
+}
+
+/* Individual Cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vw;
+  background-color: #e0efff;
+}
+
+.card .name {
+  font-size: 1.5vw;
+  color: #2d3436;
+}
+
+.card img {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vw;
+  background-color: #ffffff;
+}
+
+.card .bottom .open-sign {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #6c5ce7;
+  cursor: pointer;
+}
 }

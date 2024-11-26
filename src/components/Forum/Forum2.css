@@ -1,147 +1,172 @@
-.forums2{
-    height: 100vh;
+/* Main Content Wrapper */
+
+
+/* Overall Forum Container */
+.forums22 {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 3vh; /* Spacing between sections */
+}
+
+/* Form to Add Questions */
+.add-question-section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.add-question-section textarea {
+  width: 100%;
+  height: 8vh;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  padding: 1vh 1vw;
+  font-size: 1.1vw;
+  resize: none;
+  font-family: 'Arial', sans-serif;
+  color: #2d3436;
+}
+
+.add-question-section textarea:focus {
+  border-color: #6c5ce7;
+  outline: none;
+}
+
+.add-question-section .question-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-question-section button {
+  background-color: #63c6ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-question-section button:hover {
+  background-color: #a29bfe;
+}
+
+/* Each Question Section */
+.question-section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.question-section h2 {
+  font-size: 1.5vw;
+  color: #2d3436;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.question-section .question-content {
+  font-size: 1.2vw;
+  color: #636e72;
+  margin-bottom: 2vh;
+}
+
+/* Answer Section */
+.answer-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-bottom: 2vh;
+}
+
+.answer-section textarea {
+  width: 100%;
+  height: 6vh;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  padding: 1vh 1vw;
+  font-size: 1.1vw;
+  resize: none;
+  font-family: 'Arial', sans-serif;
+  color: #2d3436;
+}
+
+.answer-section textarea:focus {
+  border-color: #6c5ce7;
+  outline: none;
+}
+
+.answer-section .answer-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.answer-section button {
+  background-color: #79ceff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.answer-section button:hover {
+  background-color: #a29bfe;
+}
+
+/* Existing Answers */
+.answer-content {
+  background-color: #f1f2f6;
+  border-radius: 10px;
+  padding: 1vh 1vw;
+  font-size: 1.1vw;
+  color: #2d3436;
+  margin-bottom: 1vh;
+}
+
+.answer-content p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
     width: 100%;
-    padding-top: 56px;
+  }
+
+  .add-question-section textarea,
+  .answer-section textarea {
+    font-size: 1rem;
+  }
+
+  .question-section h2,
+  .question-content,
+  .answer-content p {
+    font-size: 1rem;
+  }
+
+  .add-question-section button,
+  .answer-section button {
+    font-size: 0.9rem;
+  }
+  .forum-head{
     display: flex;
-    top: 0;
-    right: -100%;
-    position: fixed;
-    justify-content: center;
-    background-color: rgb(216, 215, 215);
-  
-  
-   }
-   .forums22{
-    height: 100vh;
-    width: 100%;
-    padding-top: 56px;
-    display: flex;
-    top: 0;
-    right: 0%;
-  
-    justify-content: center;
-    background-color: rgb(215, 215, 215);
-  
-  
-   }
-  
-      .forum-sec {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-          padding: 20px;
-          width: 100%;
-          margin: 0 auto;
-   
-        }
-        
-        /* Question and Answer Sections */
-        .question-section, .answer-section {
-          background-color: #ffffff;
-          width: 100%;
-          border-radius: 8px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-          padding: 16px;
-        }
-        
-        /* Headers */
-        .question-section h2, .answer-section h2 {
-          margin: 0 0 10px 0;
-          font-size: 1.2em;
-          color: #333;
-          border-bottom: 1px solid #ddd;
-          padding-bottom: 8px;
-        }
-        
-        /* Content Styling */
-        .question-content, .answer-content {
-          font-size: 1em;
-          line-height: 1.6;
-          color: #555;
-          padding: 8px 0;
-        }
-        
-        /* Action Buttons */
-        .question-actions, .answer-actions {
-          display: flex;
-          gap: 10px;
-          margin-top: 8px;
-        }
-        
-        .question-actions button, .answer-actions button {
-          background-color: #007bff;
-          color: white;
-          border: none;
-          border-radius: 4px;
-          padding: 6px 12px;
-          cursor: pointer;
-          font-size: 0.9em;
-        }
-        
-        .question-actions button:hover, .answer-actions button:hover {
-          background-color: #0056b3;
-        }
-        /* Answer Input Section */
-  .answer-input-section {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background-color: #ffffff;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
   }
-  
-  .answer-input-section textarea {
-    width: 100%;
-    height: 80px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 8px;
-    font-size: 1em;
-    resize: none;
-  }
-  
-  .answer-input-section .answer-actions button {
-    align-self: flex-end;
-    background-color: #28a745;
-    color: white;
-    padding: 6px 12px;
-    font-size: 0.9em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .answer-input-section .answer-actions button:hover {
-    background-color: #218838;
-  }
-  textarea {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 8px;
-    font-size: 1em;
-    resize: none;
-    margin-bottom: 8px;
-  }
-  
-  textarea:focus {
-    outline: 2px solid #007bff;
-  }
-  
-  .question-actions button,
-  .answer-actions button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 6px 12px;
-    cursor: pointer;
-    font-size: 0.9em;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+}

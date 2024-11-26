@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./Attendance.css";
-import Navi from "../Navbar/Navi";
+import V_navi from "../Navbar/V_navi";
 import Foot from "../Footer/Foot";
 
 function Attendance(){
     return(
         <>
-        <Navi />
+        <V_navi />
+        <div className="main-content">
     <div className="A_container">
         <div className="A_subcontainer">
             <div className="A_header">
@@ -28,7 +29,8 @@ function Attendance(){
   
 
 </div>
-<Foot />
+</div>
+
 </>
 
     );

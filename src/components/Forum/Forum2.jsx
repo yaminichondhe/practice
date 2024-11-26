@@ -1,7 +1,6 @@
 import React from "react";
 import "./Forum2.css";
-import Navi from "../Navbar/Navi";
-import Foot from "../Footer/Foot";
+import V_navi from "../Navbar/V_navi";
 import  { useState } from 'react';
 
 
@@ -34,8 +33,13 @@ function Forum2(){
   }
     return(
       <>
-      <Navi />
+      <V_navi />
+      <div className="main-content">
       <div className="forums22">
+        <div className="forum-head">
+          <h1>Explore Discussion</h1>
+          <div className="not-icon" >not</div>
+        </div>
     <div className="forum-sec">
         {/* Add Question and Answer Form */}
         <form onSubmit={handleAddQuestionWithAnswer} className="add-question-section">
@@ -88,8 +92,9 @@ function Forum2(){
         ))}
       </div>
     </div>
+    </div>
         
-      <Foot />
+      
       </>
     );
 }

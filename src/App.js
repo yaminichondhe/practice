@@ -17,21 +17,25 @@ import Attendance from "./components/Attendance/Attendance";
 import Statistics from "./components/Statistics/Statistics";
 import Home2 from "./components/Home2/Home2";
 import Home from "./components/Home/Home";
+import Navi2 from "./components/Navbar/Navi2";
+import StuDash from "./components/Dashboard/StuDash";
+
 
 function App() {
   return (
     <div className="App">
-       <Navi />
+       
         
         <div className='gradient-background'>
-          
+        
         
           <StartBox />
           <div className='title'>
             <Forum />
-            <CreateTool />
+            
           </div>
         </div>
+        <StuDash />
         <Foot />
     </div>
   );

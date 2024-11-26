@@ -1,0 +1,91 @@
+/* Main Dashboard Container */
+.dash-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f9; /* Light gray background */
+  }
+  
+  /* Main Content */
+  .main-content {
+    width: calc(100% - 18vw); /* Remaining width after V_navi */
+    margin-left: 18vw; /* Space for the vertical navigation */
+    padding: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh; /* Spacing between header and body */
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Header Section */
+  .dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw;
+    border-bottom: 2px solid #dfe6e9;
+  }
+  
+  .dash-header h1 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #2d3436;
+  }
+  
+  .logout-btn {
+    background-color: #d63031;
+    color: #ffffff;
+    font-size: 1vw;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e17055;
+  }
+  
+  /* Dashboard Body */
+  .dash-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 3vw;
+    padding: 2vh 0;
+  }
+/* Dashboard Card Container */
+.dash-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 2vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dash-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Content Inside the Card */
+  .dash-card-content {
+    text-align: center;
+  }
+  
+  .dash-no h1 {
+    font-size: 3vw;
+    color: #6c5ce7; /* Modern purple shade */
+    margin-bottom: 1vh;
+  }
+  
+  .dash-name h2 {
+    font-size: 1.5vw;
+    color: #2d3436; /* Dark gray */
+    font-weight: bold;
+  }
+    

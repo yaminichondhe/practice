@@ -12,7 +12,7 @@ function Classcard(props) {
       </div>
       <div className="bottom">
         <Detail detailInfo={props.tel} />
-        
+        <div className="open-sign">S</div>
       </div>
     </div>
   );

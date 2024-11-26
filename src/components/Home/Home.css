@@ -2,7 +2,7 @@
   .welcome {
     height: 80vh; 
     width: 100%;
-    background-color: #F1FFBB;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,23 +10,28 @@
   .start-box{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
+    align-items: center;
   }
   .left-shift{
-    position: fixed;
-    left: 0%;
+    position: relative;
+    left: 4%;
+    
     
   }
   .right-shift{
-    position: fixed;
-    right: 0%;
+    position: relative;
+    right: 4%;
+  }
+  .right-shift:hover{
+    background-color: gray;
   }
   .c0 {
     height: 100%;
     width: 50%;
     margin-left: 5%;
     margin-top: 0%;
-    background-image: url("./imagess/show1.png");
+    background-image: url("./imagess/ph_coverimg.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -36,7 +41,7 @@
     width: 30%;
     margin-left: 5%;
     margin-top: 0%;
-    background-image: url("./imagess/image.png");
+    /* background-image: url("./imagess/image.png"); */
     background-size: cover;
     background-position: center;
     /* Other styles */
@@ -45,7 +50,7 @@
   .c2 {
     height: 100%;
     width: 50%;
-    background-image: url("./imagess/benefits.png");
+    /* background-image: url("./imagess/benefits.png"); */
     background-size: cover;
     background-position: center;
     margin-left: 0%;
@@ -53,7 +58,7 @@
   .c3 {
     height: 76%;
     width: 30%;
-    background-image: url("./imagess/pngwing.com.png");
+    /* background-image: url("./imagess/pngwing.com.png"); */
     background-size: cover;
     background-position: center;
     margin-top: 3%;
@@ -64,32 +69,50 @@
   
   .title {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     height: auto; /* Let the height adjust based on content */
     width: 100%;
     padding: 20px;
   }
   
-  .forums {
-    flex: 1; /* Take up half the width */
-    max-width: 50%; /* Restrict it to half the width */
-    
+  .features {
+   
+    flex: 1;
+    max-width: 48%;
     background-color: #BBDAFF;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 2%;
+    margin-top: 4%;
   }
   
   .tools {
-    flex: 1; /* Take up half the width */
-    max-width: 50%; /* Restrict it to half the width */
+   
     height: 100%;
+   
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust 150px to your preferred minimum size */
+      grid-gap: 2%; /* Gap between tool cards */
+      padding: 2.5%;
+      padding-left: 0%;
+      width: 100%; /* Ensure it takes up the full width */
+    
+    
+  }
+  .forum-feature-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .forum-reg-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-gap: 20px; /* Gap between tool cards */
-    padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust 150px to your preferred minimum size */
+      grid-gap: 2%; /* Gap between tool cards */
+      padding: 2.5%;
+      padding-left: 0%;
+      width: 50%; /* Ensure it takes up the full width */
   }
   
   .stats {
@@ -98,7 +121,7 @@
     height: 100%;
       
     position: relative;
-    border-radius: 8px;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,32 +130,84 @@
     background-size: contain;   /* Ensures the image covers the div */
     background-repeat: no-repeat;
     background-position: center;  /* Center the image */
-    border: 1px solid #ccc;
-    border-radius: 8px;
+   
     margin: 10px;
     
   }
   .changing-content{
-    height: 36vw;
+    height: 40vw;
     width: 100vw;
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:space-around;
     background-color: #FFAEC9;
+    transition: transform 0.5s ease;
 
   }
   .changing-matter{
     height: 70%;
     width: 50%;
-    margin-top: 5%;
+    margin-top: 3%;
     animation-name: slideInRight ;
     animation-duration: 2s;
     margin-right: 3%;
 
   }
+  .img-matter-container{
+    height: 40vw;
+    width: 100vw;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    
+    
+  }
   .changing-matter p{
     line-height: 150%;
     font-size: larger;
+  }
+  .feature-info p{
+    font-size: 1.2rem;
+  }
+  .ToolName{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 35%;
+  }
+  .forum-tool{
+    width: 100%; /* Full width inside the grid */
+    padding-bottom: 50%; /* Ensures square shape */
+    height: 100%;
+      
+    position: relative;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Adjust as needed */
+     background-color: #FFAEC9;
+    background-size: contain;   /* Ensures the image covers the div */
+    background-repeat: no-repeat;
+    background-position: center;  /* Center the image */
+   
+    margin: 10px;
+  }
+  .reg-tool{
+    width: 100%; /* Full width inside the grid */
+    padding-bottom: 50%; /* Ensures square shape */
+    height: 100%;
+      
+    position: relative;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Adjust as needed */
+    background-color: #fff3af;
+    background-size: contain;   /* Ensures the image covers the div */
+    background-repeat: no-repeat;
+    background-position: center;  /* Center the image */
+   
+    margin: 10px;
   }
 
 
@@ -149,12 +224,12 @@
 }
 
 .f3 {
-  background-color: #e5f0ff; /* Blue-ish background for Toolcard with id "f3" */
-  background-image: url("./images/man-holding-clock-time-management-concept.png");
+  background-color: #b9e9ff; /* Blue-ish background for Toolcard with id "f3" */
+  background-image: url("./imagess/noteshare.png");
 }
 
 .f4 {
-  background-color: #fffbe5; /* Yellow-ish background for Toolcard with id "f4" */
+  background-color: #fff3af; /* Yellow-ish background for Toolcard with id "f4" */
   background-image: url("./images/aaa.png");
 }
 
@@ -171,7 +246,7 @@
       flex-direction: column;
     }
     
-    .forums, .tools {
+    .features, .tools {
       max-width: 100%; /* Full width for both on small screens */
     }
   
@@ -213,7 +288,7 @@
         width: 50%;
         margin-left: 5%;
         margin-top: 0%;
-        background-image: url("./imagess/show1.png");
+        background-image: url("./imagess/ph_coverimg.svg");
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -223,7 +298,7 @@
         width: 30%;
         margin-left: 5%;
         margin-top: 0%;
-        background-image: url("./imagess/image.png");
+        /* background-image: url("./imagess/image.png"); */
         background-size: cover;
         background-position: center;
         /* Other styles */
@@ -232,7 +307,7 @@
       .c2 {
         height: 100%;
         width: 50%;
-        background-image: url("./imagess/benefits.png");
+        /* background-image: url("./imagess/benefits.png"); */
         background-size: cover;
         background-position: center;
         margin-left: 0%;
@@ -240,7 +315,7 @@
       .c3 {
         height: 76%;
         width: 30%;
-        background-image: url("./imagess/pngwing.com.png");
+        /* background-image: url("./imagess/pngwing.com.png"); */
         background-size: cover;
         background-position: center;
         margin-top: 3%;
@@ -249,35 +324,47 @@
       
       /* Add more classes as needed */
       
-      .title {
-        display: flex;
-        justify-content: space-between;
-        height: auto; /* Let the height adjust based on content */
+      .title { 
         width: 100%;
-        padding: 20px;
+        padding: 2%;
       }
       
-      .forums {
-        flex: 1; /* Take up half the width */
-        max-width: 50%; /* Restrict it to half the width */
-        
-        background-color: #BBDAFF;
+      .features {
+       height: 120%;
+       margin-top: 2%;
+      }
+      .reg-forum-name{
+        margin-top: 1%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 20px;
+        flex-direction: row;
+        gap: 40%;
+        margin-left:55%;
       }
       
       .tools {
-        flex: 1; /* Take up half the width */
-        max-width: 50%; /* Restrict it to half the width */
+       
         height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        grid-gap: 20px; /* Gap between tool cards */
-        padding: 20px;
+       
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust 150px to your preferred minimum size */
+          grid-gap: 2%; /* Gap between tool cards */
+          padding: 2.5%;
+          padding-left: 0%;
+          
+          width: 100%; /* Ensure it takes up the full width */
+          
+        
+        
       }
+      .forum-feature-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 2%;
+        padding: 2%;
+        padding-bottom: 0%;
+        
+      }
+     
       
       .stats {
         width: 100%; /* Full width inside the grid */
@@ -285,7 +372,7 @@
         height: 100%;
           
         position: relative;
-        border-radius: 8px;
+       
         display: flex;
         align-items: center;
         justify-content: center;
@@ -294,16 +381,15 @@
         background-size: contain;   /* Ensures the image covers the div */
         background-repeat: no-repeat;
         background-position: center;  /* Center the image */
-        border: 1px solid #ccc;
-        border-radius: 8px;
+       
         margin: 10px;
         
       }
       .changing-content{
-        height: 36vw;
+        height: 40vw;
         width: 100vw;
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content:space-around;
         background-color: #FFAEC9;
         transition: transform 0.5s ease;
@@ -312,21 +398,63 @@
       .changing-matter{
         height: 70%;
         width: 50%;
-        margin-top: 5%;
+        margin-top: 3%;
         animation-name: slideInRight ;
         animation-duration: 2s;
         margin-right: 3%;
 
       }
+      .img-matter-container{
+        height: 40vw;
+        width: 100vw;
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+        
+        
+      }
       .changing-matter p{
         line-height: 150%;
         font-size: larger;
       }
-      .forum-info p{
+      .feature-info p{
         font-size: 1.2rem;
       }
       .ToolName{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 35%;
+      }
+      .forum-tool{
+        width: 100%; /* Full width inside the grid */
+        
+        height: 100%;
+          
+        position: relative;
+       
+        background-image: url("./imagess/Forum.png");
+        width: 100%;  /* Adjust as needed */
+         background-color: #dbf2ff;
+        background-size: contain;   /* Ensures the image covers the div */
+        background-repeat: no-repeat;
+        background-position: center;  /* Center the image */
+       
+        
+      }
+      .reg-tool{
+        width: 100%; /* Full width inside the grid */
+        
+        height: 100%;
+          
+        position: relative;
+       
+       
+        width: 100%;  /* Adjust as needed */
+        background-color: #fff3af;
+        background-size: contain;   /* Ensures the image covers the div */
+        background-repeat: no-repeat;
+        background-position: center;  /* Center the image */
+       
+        
       }
     
     
@@ -348,7 +476,7 @@
     }
     
     .f4 {
-      background-color: #fffbe5; /* Yellow-ish background for Toolcard with id "f4" */
+      background-color: #fff3af; /* Yellow-ish background for Toolcard with id "f4" */
       background-image: url("./images/aaa.png");
     }
     
@@ -365,7 +493,7 @@
           flex-direction: column;
         }
         
-        .forums, .tools {
+        .features, .tools {
           max-width: 100%; /* Full width for both on small screens */
         }
       

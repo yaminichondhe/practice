@@ -14,13 +14,15 @@ function Toolcard(props) {
     <div className="tool-box" onClick={handleNavigation}>
       <div className={`stats ${props.id}`}>
         
-        <div className="ToolName">
+        
+        
+      </div>
+      <div className="ToolName">
         {props.name}
           {/* <Link to={props.path}>
             <button>{props.name}</button>
           </Link> */}
         </div>
-      </div>
     </div>
   );
 }

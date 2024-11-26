@@ -1,0 +1,44 @@
+.V-container {
+    height: 100vh;
+    width: 18vw;
+    background-color: #cfe8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+    position: fixed;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .V-icon {
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5vh;
+  }
+  
+  .V-hold {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3vw;
+  }
+  
+  .V-home, .V-stu, .V-tea {
+    font-size: 1.2vw;
+    color: #252525;
+    padding: 1.5vh 0;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .V-home:hover, .V-stu:hover, .V-tea:hover {
+    background-color: #7ab8ff;
+    color: #ffffff;
+    padding-left: 4vw;
+    border-radius: 0 15px 15px 0;
+  }
