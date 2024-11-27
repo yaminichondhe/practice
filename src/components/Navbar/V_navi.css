@@ -34,6 +34,8 @@
     text-align: left;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
   }
   
   .V-home:hover, .V-stu:hover, .V-tea:hover {

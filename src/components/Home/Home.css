@@ -381,7 +381,7 @@
         background-size: contain;   /* Ensures the image covers the div */
         background-repeat: no-repeat;
         background-position: center;  /* Center the image */
-       
+        cursor: pointer;
         margin: 10px;
         
       }
@@ -430,7 +430,7 @@
         height: 100%;
           
         position: relative;
-       
+        cursor: pointer;
         background-image: url("./imagess/Forum.png");
         width: 100%;  /* Adjust as needed */
          background-color: #dbf2ff;
@@ -447,14 +447,21 @@
           
         position: relative;
        
-       
+        cursor: pointer;
         width: 100%;  /* Adjust as needed */
         background-color: #fff3af;
         background-size: contain;   /* Ensures the image covers the div */
         background-repeat: no-repeat;
         background-position: center;  /* Center the image */
-       
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       background-image: url("./imagess/collegeimg.svg");
         
+      }
+      .reg-tool p{
+
       }
     
     
@@ -463,6 +470,7 @@
     .f1 {
       background-color: #ffe5e5; /* Red-ish background for Toolcard with id "f1" */
       background-image: url("./images/appointment-booking-calendar-design.png");
+      
     }
     
     .f2 {

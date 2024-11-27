@@ -1,0 +1,169 @@
+/* Global Styles for Popup */
+.T_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.T_form-container {
+  background: white;
+  padding: 3%;
+  
+  width: 70vw;
+  max-width: 50vw;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-y: auto;
+}
+
+.T_close-button {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 10vh; /* Adjust size based on viewport height */
+  color: black; /* Default color */
+  cursor: pointer; /* Pointer cursor on hover */
+  line-height: 1; /* Fix vertical alignment */
+  padding: 0; /* Remove extra space around */
+  margin: 0; /* Remove any margins */
+}
+
+.T_close-button:hover {
+  color: red; /* Change color on hover */
+}
+
+
+
+.T_form-container h2 {
+  margin-bottom: 3vh;
+  font-size: 2.5vw;
+  color: #333333;
+  text-align: center;
+}
+
+.T_form-container form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0%;
+}
+
+.T_form-container input {
+  width: 95%;
+  margin: 1.5vh 0;
+  padding: 1.5vh 2vw;
+  border: 1px solid #ccc;
+  gap: 0%;
+  font-size: 1.2vw;
+}
+
+.T_form-container button {
+  width: 95%;
+  padding: 1.5vh 0;
+  background: #007bff;
+  color: white;
+  border: none;
+  
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.T_form-container button:hover {
+  background: #0056b3;
+}
+
+.T_form-container p {
+  margin-top: 2vh;
+  font-size: 1vw;
+  color: #555555;
+  text-align: center;
+}
+
+.T_toggle-link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1vw;
+}
+
+.T_toggle-link:hover {
+  color: #0056b3;
+}
+
+/* Media Query for Larger Screens (Desktops) */
+@media (min-width: 1201px) {
+  .T_form-container {
+    width: 30vw;
+    padding: 3%;
+    max-height: 50vh;
+  }
+
+  .T_form-container h2 {
+    font-size: 2vw;
+  }
+
+  .T_form-container input, .T_form-container button {
+    font-size: 1vw;
+  }
+
+  .T_close-button {
+    font-size: 1.5vw;
+  }
+}
+
+/* Media Query for Medium Screens (Tablets) */
+@media (min-width: 481px) and (max-width: 1200px) {
+  .T_form-container {
+    width: 50vw;
+    padding: 4%;
+    max-height: 70vh;
+  }
+
+  .T_form-container h2 {
+    font-size: 2.2vw;
+  }
+
+  .T_form-container input, .T_form-container button {
+    font-size: 1.5vw;
+  }
+
+  .T_close-button {
+    font-size: 1.8vw;
+  }
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .T_form-container {
+    width: 90vw;
+    padding: 6%;
+    max-height: 85vh;
+  }
+
+  .T_form-container h2 {
+    font-size: 4vw;
+  }
+
+  .T_form-container input, .T_form-container button {
+    font-size: 3vw;
+  }
+
+  .T_close-button {
+    font-size: 4vw;
+  }
+}

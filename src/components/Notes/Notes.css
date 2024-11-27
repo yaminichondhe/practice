@@ -431,12 +431,15 @@ cursor: pointer;
   align-items: center;
   padding: 2vh 2vw;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
-.card .bottom .open-sign {
-  font-size: 1.2vw;
-  font-weight: bold;
-  color: #6c5ce7;
+.open-sign{
+ 
+  font-size: larger;
+  font-weight: 400;
+  background-image: url("./right-arrow.png");
   cursor: pointer;
+  
 }
 }

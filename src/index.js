@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Attendance/Attendance",
-    element: <Attendance />, // Add corresponding components here
+    element: <Attendance />, 
   },
   {
     path: "/Statistics/Statistics",

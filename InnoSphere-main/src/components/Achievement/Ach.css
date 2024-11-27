@@ -1,0 +1,123 @@
+/* Main Content (Excluding Navigation) */
+.main-content {
+  margin-left: 18vw; /* Adjust to the width of the vertical navigation */
+  width: calc(100% - 18vw); /* Remaining space after navbar */
+  padding: 3vh 3vw;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/* Grid Layout for Posts */
+.post-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr)); /* Responsive grid layout */
+  gap: 2vw;
+  width: 100%;
+}
+
+/* Individual Post Card */
+.post {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+}
+
+.post:hover {
+  transform: scale(1.03);
+}
+
+/* Profile Section (Top of Post) */
+.prof {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 2vh;
+}
+
+.photo {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name p {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+/* Certificate Image */
+.certificate img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 2vh 0;
+}
+
+/* Like and Comment Icons */
+.like {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+  font-size: 1.5vw;
+  color: #ff0000;
+  margin: 1vh 0;
+  cursor: pointer;
+}
+
+.like svg:hover {
+  color: #a29bfe;
+}
+
+/* Post Description */
+.discript {
+  font-size: 1vw;
+  color: #636e72;
+  line-height: 1.5;
+  margin-top: 1vh;
+  text-align: justify;
+}
+
+/* Add Post Button */
+.addpost {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  background-color: #6c5ce7;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.addpost:hover {
+  background-color: #a29bfe;
+}
+
+.addpost svg {
+  font-size: 2.5vw;
+  color: #ffffff;
+}

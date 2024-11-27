@@ -3,6 +3,7 @@ import Avatar from "./Avatar";
 import Detail from "./Detail";
 import "./Notes.css";
 
+
 function Classcard(props) {
   return (
     <div className="card">
@@ -12,7 +13,7 @@ function Classcard(props) {
       </div>
       <div className="bottom">
         <Detail detailInfo={props.tel} />
-        <div className="open-sign">S</div>
+        <div className="open-sign">></div>
       </div>
     </div>
   );

@@ -3,8 +3,15 @@ import "./Home.css";
 import { Link } from 'react-router-dom';
 import CreateTool from "./CreateTool";
 import Clgreg from "../login forms/Clgreg";
+import { useNavigate } from 'react-router-dom';
 
 function Forum() {
+  const navigate = useNavigate();  // Initialize useNavigate
+
+  // Handle navigation on div click
+  const handleNavigation = () => {
+    navigate('/Forum/Forum2');  // Navigate to the specified path
+  };
   const [isPopupOpen, setIsPopupOpen] = useState(false); // State to manage popup visibility
 
   // Function to toggle the popup
@@ -20,20 +27,23 @@ function Forum() {
             <h1>Explore Features</h1>
             <p className="disc">Welcome, Explore Your Gateway to Smarter Learning and Seamless Collaboration!</p>
             <p>Start With the college registrations here!</p>
-            {/* Button to open the Clgreg popup */}
-            <button type="button" className="btn-primary" onClick={togglePopup}>
-              Explore
-            </button>
+            
           </div>
         </div>
 
-        <div className="reg-tool" />
-        <div className="forum-tool" />
+        <div className="reg-tool" >
+          <p>Start With the college registrations here!</p>
+            {/* Button to open the Clgreg popup */}
+            <button type="button" className="btn-reg" onClick={togglePopup}>
+              Register
+            </button>
+            </div>
+        <div className="forum-tool" onClick={handleNavigation}/>
       </div>
 
       <div className="reg-forum-name">
-        <div className="reg-name">Student Account</div>
-        <div className="forum-name">Forum</div>
+        <div className="reg-name">College Registration</div>
+        <div className="forum-name" >Forum</div>
       </div>
 
       <CreateTool />

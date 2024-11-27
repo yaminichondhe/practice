@@ -1,0 +1,76 @@
+/* General Container */
+.N-container {
+    width: 80%; /* Full width of the viewport */
+    height: 10vh; /* Navbar height as 10% of viewport height */
+    background-color:#ffffff38; /* Light background color */
+    display: flex;
+    justify-content: center; /* Center-align content */
+    align-items: center; /* Vertically align content */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    margin-top: 5%;
+    margin-left: 9.5%;
+    
+  }
+  
+  /* Main Navbar */
+  .N-main {
+    width: 90%; /* Centralized content width */
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center-align items vertically */
+    
+  }
+  
+  /* Left Section */
+  .N-left {
+    width: 50%; /* Left section occupies half of the navbar */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 3vw; /* Add space between menu items */
+  }
+  
+  .N-home,
+  .N-stu,
+  .N-tea {
+    font-size: 2vh; /* Font size relative to viewport height */
+    cursor: pointer;
+    color: #333; /* Text color */
+    transition: color 0.3s;
+  }
+  
+  .N-home:hover,
+  .N-stu:hover,
+  .N-tea:hover {
+    color: #007bff; /* Highlight text color on hover */
+  }
+  
+  /* Right Section */
+  .N-right {
+    width: 50%; /* Right section occupies the other half */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    gap: 1vw; /* Add spacing between input and text */
+  }
+  
+  .N-right input {
+    width: 20vw; /* Input field width as a percentage of viewport width */
+    height: 4vh; /* Input height relative to viewport height */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 1vh; /* Rounded corners */
+    padding: 0 1vw; /* Horizontal padding inside the input */
+    font-size: 2vh; /* Font size relative to viewport height */
+  }
+  
+  .N-right input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border on focus */
+  }
+  
+  .N-right span {
+    font-size: 2vh; /* Font size for text */
+    color: #333; /* Text color */
+  }
+  

@@ -1,143 +1,155 @@
 {
   
-  "homepage": "https://sunilchavan8383.github.io/InnoSphere",
+"homepage": ".",
   
-  "name": "innosphere",
+"name": "innosphere",
   
-  "version": "0.1.0",
+"version": "0.1.0",
   
-  "private": true,
+"private": true,
   
-  "dependencies": {
+"dependencies": {
   
-    
-  "@fortawesome/fontawesome-svg-core": "^6.6.0",
   
-    
-  "@fortawesome/free-solid-svg-icons": "^6.6.0",
+"@fortawesome/fontawesome-svg-core": "^6.6.0",
   
-    
-  "@fortawesome/react-fontawesome": "^0.2.2",
   
-    
-  "@testing-library/jest-dom": "^5.17.0",
+"@fortawesome/free-solid-svg-icons": "^6.6.0",
   
-    
-  "@testing-library/react": "^13.4.0",
   
-    
-  "@testing-library/user-event": "^13.5.0",
+"@fortawesome/react-fontawesome": "^0.2.2",
   
-    
-  "bootstrap": "^5.3.3",
   
-    
-  "jquery": "^3.7.1",
+"@testing-library/jest-dom": "^5.17.0",
   
-    
-  "react": "^18.3.1",
   
-    
-  "react-dom": "^18.3.1",
+"@testing-library/react": "^13.4.0",
   
-    
-  "react-router-dom": "^6.27.0",
   
-    
-  "react-scripts": "^5.0.1",
+"@testing-library/user-event": "^13.5.0",
   
-    
-  "web-vitals": "^2.1.4",
   
-    
-  "webpack": "^5.95.0"
+"body-parser": "^1.20.3",
   
-  },
   
-  "scripts": {
+"bootstrap": "^5.3.3",
   
-    
-  "start": "react-scripts start",
   
-    
-  "predeploy": "npm run build",
+"cors": "^2.8.5",
   
-    
-  "deploy": "gh-pages -d build",
   
-    
-  "build": "react-scripts build",
+"express": "^4.21.1",
   
-    
-  "test": "react-scripts test",
   
-    
-  "eject": "react-scripts eject"
+"jquery": "^3.7.1",
   
-  },
   
-  "eslintConfig": {
+"pg": "^8.13.1",
   
-    
-  "extends": [
   
-    
-    
-  "react-app",
+"react": "^18.3.1",
   
-    
-    
-  "react-app/jest"
   
-    
-  ]
+"react-dom": "^18.3.1",
   
-  },
   
-  "browserslist": {
+"react-router-dom": "^6.27.0",
   
-    
-  "production": [
   
-    
-    
-  ">0.2%",
+"react-scripts": "^5.0.1",
   
-    
-    
-  "not dead",
   
-    
-    
-  "not op_mini all"
+"web-vitals": "^2.1.4",
   
-    
-  ],
   
-    
-  "development": [
+"webpack": "^5.95.0"
   
-    
-    
-  "last 1 chrome version",
+},
   
-    
-    
-  "last 1 firefox version",
+"scripts": {
   
-    
-    
-  "last 1 safari version"
   
-    
-  ]
+"start": "react-scripts start",
   
-  },
   
-  "devDependencies": {
+"predeploy": "npm run build",
   
-    
-  "gh-pages": "^6.2.0"
   
-  }
+"deploy": "gh-pages -d build",
+  
+  
+"build": "react-scripts build",
+  
+  
+"test": "react-scripts test",
+  
+  
+"eject": "react-scripts eject"
+  
+},
+  
+"eslintConfig": {
+  
+  
+"extends": [
+  
+  
+  
+"react-app",
+  
+  
+  
+"react-app/jest"
+  
+  
+]
+  
+},
+  
+"browserslist": {
+  
+  
+"production": [
+  
+  
+  
+">0.2%",
+  
+  
+  
+"not dead",
+  
+  
+  
+"not op_mini all"
+  
+  
+],
+  
+  
+"development": [
+  
+  
+  
+"last 1 chrome version",
+  
+  
+  
+"last 1 firefox version",
+  
+  
+  
+"last 1 safari version"
+  
+  
+]
+  
+},
+  
+"devDependencies": {
+  
+  
+"gh-pages": "^6.2.0"
+  
+}
 }

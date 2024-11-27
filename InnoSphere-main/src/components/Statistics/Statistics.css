@@ -1,0 +1,245 @@
+@media (min-width:1201px){
+.stat_container {
+    padding: 2%;
+    height: 100vh;
+    background-color: #f4f4f9; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stat_head {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #333;
+  }
+  
+  .stats_subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%; /* Ensure some padding on the sides */
+  }
+  
+  .Top_t,
+  .Top_s {
+    width: 45%; /* Each section takes 45% of the width */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teacher-3,
+  .student-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between each teacher or student */
+  }
+  
+  .PicName {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between photo and name */
+  }
+  
+  .PicName img {
+    width: 60px; /* Circular photo size */
+    height: 60px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    border: 2px solid #4caf50; /* Optional border for styling */
+  }
+  
+  .PicName span {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #333;
+  }
+  .pic-name-comp{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .pic-name-comp {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .circle-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+  
+  .t_name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Specific styles for each id */
+  .t1 {
+    background-color: #4caf50; /* Green */
+    border: 2px solid #388e3c;
+  }
+  
+  .t2 {
+    background-color: #2196f3; /* Blue */
+    border: 2px solid #1976d2;
+  }
+  
+  .t3 {
+    background-color: #ff9800; /* Orange */
+    border: 2px solid #f57c00;
+  }
+  .s1 {
+    background-color: #4caf50; /* Green */
+    border: 2px solid #388e3c;
+  }
+  
+  .s2 {
+    background-color: #2196f3; /* Blue */
+    border: 2px solid #1976d2;
+  }
+  
+  .s3 {
+    background-color: #ff9800; /* Orange */
+    border: 2px solid #f57c00;
+  }
+}
+@media ((min-width:481px) and (max-width: 1200px)) {
+  .stat_container {
+    padding: 2%;
+    height: 100vh;
+    background-color: #f4f4f9; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stat_head {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #333;
+  }
+  
+  .stats_subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%; /* Ensure some padding on the sides */
+  }
+  
+  .Top_t,
+  .Top_s {
+    width: 45%; /* Each section takes 45% of the width */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teacher-3,
+  .student-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between each teacher or student */
+  }
+  
+  .PicName {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between photo and name */
+  }
+  
+  .PicName img {
+    width: 60px; /* Circular photo size */
+    height: 60px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    border: 2px solid #4caf50; /* Optional border for styling */
+  }
+  
+  .PicName span {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #333;
+  }
+  .pic-name-comp{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .pic-name-comp {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .circle-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+  
+  .t_name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Specific styles for each id */
+  .t1 {
+    background-color: #4caf50; /* Green */
+    border: 2px solid #388e3c;
+  }
+  
+  .t2 {
+    background-color: #2196f3; /* Blue */
+    border: 2px solid #1976d2;
+  }
+  
+  .t3 {
+    background-color: #ff9800; /* Orange */
+    border: 2px solid #f57c00;
+  }
+  .s1 {
+    background-color: #4caf50; /* Green */
+    border: 2px solid #388e3c;
+  }
+  
+  .s2 {
+    background-color: #2196f3; /* Blue */
+    border: 2px solid #1976d2;
+  }
+  
+  .s3 {
+    background-color: #ff9800; /* Orange */
+    border: 2px solid #f57c00;
+  }
+}
+  
