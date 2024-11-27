@@ -15,14 +15,16 @@ const Slog = ({ togglePopup }) => {
         <h2>{isRegister ? "Register" : "Login"}</h2>
         {isRegister ? (
           <form>
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="password" placeholder="Password" required />
+            <input type="text" placeholder="Enter Username" required />
+            <input type="email" placeholder="Enter Password" required />
+            <input type="password" placeholder="Enter College Code" required />
+            <input type="password" placeholder="Enter Department Code" required />
+            <input type="password" placeholder="Enter contact number" required />
             <button type="submit">Register</button>
           </form>
         ) : (
           <form>
-            <input type="email" placeholder="Email" required />
+            <input type="email" placeholder="Enter Username" required />
             <input type="password" placeholder="Password" required />
             <button type="submit">Login</button>
           </form>
